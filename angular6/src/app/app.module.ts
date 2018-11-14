@@ -132,6 +132,8 @@ import { ProjectWorkerDetailsTemplateComponent } from './project-worker-details-
    // MDBBootstrapModule.forRoot(),  // Import app routing module,
    // MatButtonModule, MatCheckboxModule,
     BrowserAnimationsModule,
+   GridModule,
+   InputsModule,
 // MatButtonModule,
 //      MatCheckboxModule,
    // NgxLoadingModule.forRoot({})

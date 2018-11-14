@@ -32,8 +32,10 @@ namespace manageTask
             //check validation model
             if (ModelState.IsValid(project))
             {
-                radWaitingBar1.Show();
-                radWaitingBar1.StartWaiting();
+                radWaitingBar2.Show();
+                radWaitingBar2.StartWaiting();
+
+                //add project to db
                 if (TaskRequests.adddProject(project))
                 {
                     RadMessageBox.SetThemeName("materialTeal");
@@ -44,8 +46,8 @@ namespace manageTask
                     RadMessageBox.SetThemeName("MaterialTeal");
                     RadMessageBox.Show("error add project", "error", MessageBoxButtons.OK, RadMessageIcon.Error, MessageBoxDefaultButton.Button1);
                 }
-                radWaitingBar1.StopWaiting();
-                radWaitingBar1.Hide();
+                radWaitingBar2.StopWaiting();
+                radWaitingBar2.Hide();
             }
             else
             {
@@ -82,13 +84,12 @@ namespace manageTask
 
         private void AddProject_Load(object sender, EventArgs e)
         {
-           radWaitingBar1.Hide();
-          
-         
+           radWaitingBar2.Hide();
+ 
             //Initialize cmbx_team_leader -get teamLeaders name
 
             List<User> teamLeaders = UserLogic.getUserByDepartment(GlobalProp.TeamLeaderNameDepartment);
-            if (teamLeaders != null)
+            if (teamLeaders != null&&teamLeaders.Count>0)
             {
                 cmbx_team_leader.DisplayMember = "UserName";
                 cmbx_team_leader.Items.AddRange((teamLeaders.ToArray() as User[]));
@@ -100,9 +101,5 @@ namespace manageTask
           
         }
 
-        private void dotsRingWaitingBarIndicatorElement1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

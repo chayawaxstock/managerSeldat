@@ -21,7 +21,7 @@ import { ReportProject } from '../shared/models/reportProject';
 export class CreateReportComponent  {
 
   reportProject:ReportProject[]=[];
-constructor(public excelServise:ExcelService) {
+constructor(public excelServise:ExcelService,public managerService:ManagerService) {
 
    this.managerService.createReport("reportProject").subscribe(res=>{
     this.reportProject=res;
