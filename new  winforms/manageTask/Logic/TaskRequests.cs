@@ -37,7 +37,7 @@ namespace manageTask.Logic
 
         }
         
-            public static List<ProjectWorker> getProjectsById(int userId)
+        public static List<ProjectWorker> getProjectsById(int userId)
         {
             HttpClient client2 = new HttpClient();
             client2.BaseAddress = new Uri(@"http://localhost:61309/");
@@ -50,10 +50,8 @@ namespace manageTask.Logic
                 List<ProjectWorker> projects = JsonConvert.DeserializeObject<List<ProjectWorker>>(response2.Content.ReadAsStringAsync().Result);
                 return projects;
 
-            }
-            
-              
-                else
+            }     
+           else
             {
                 Console.WriteLine("{0} ({1})", (int)response2.StatusCode, response2.ReasonPhrase);
                 return null;
@@ -139,7 +137,7 @@ namespace manageTask.Logic
             }
         }
 
-        public static bool adddProject(Project project)
+        public static bool addProject(Project project)
         {
             try
             {
@@ -161,15 +159,48 @@ namespace manageTask.Logic
                 using (var streamReader = new System.IO.StreamReader(httpResponse.GetResponseStream(), ASCIIEncoding.ASCII))
                 {
                     string result = streamReader.ReadToEnd();
-                    //If Login succeeded
+                    //If add project succeeded
                     if (result != null)
                     {
                         return true;
-
                     }
                     return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
 
+        public static bool addWorker(User worker)
+        {
+            try
+            {
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create(@"http://localhost:61309/api/addUser");
+                httpWebRequest.ContentType = "application/json";
+                httpWebRequest.Method = "POST";
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                {
+                    string NewUserString = Newtonsoft.Json.JsonConvert.SerializeObject(worker, Formatting.None);
+                    streamWriter.Write(NewUserString);
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                }
+                //Gettting response
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+
+                //Reading response
+                using (var streamReader = new System.IO.StreamReader(httpResponse.GetResponseStream(), ASCIIEncoding.ASCII))
+                {
+                    string result = UserLogic.addUser(worker);
+                    //If Add succeeded
+                    if (result == null)
+                    {
+                        return true;
+                    }
+                    return false;
                 }
             }
             catch (Exception ex)

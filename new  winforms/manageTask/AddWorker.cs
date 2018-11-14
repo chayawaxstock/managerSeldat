@@ -14,6 +14,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls;
 
 namespace manageTask
 {
@@ -26,64 +27,56 @@ namespace manageTask
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            User worker = new User();
-            worker.UserName = txt_name.Text;
-            string password = txt_password.Text;
-            //validation password
-            if (password.Length < 4 || password.Length > 4)
+
+            User worker = getWorker();
+            if (ModelState.IsValid(worker))
             {
-                MessageBox.Show("password must contains 4 chars.");
-                return;
+                radWaitingBar2.Show();
+                radWaitingBar2.StartWaiting();
+
+                //add worker to db
+                if (TaskRequests.addWorker(worker))
+                {
+                    //secsess add worker
+                    RadMessageBox.SetThemeName("MaterialTeal");
+                    RadMessageBox.Show("succsess", "worker added", MessageBoxButtons.OK, RadMessageIcon.None, MessageBoxDefaultButton.Button1);
+                }
+                else
+                {
+                    //fail to add worker
+                    RadMessageBox.SetThemeName("MaterialTeal");
+                    RadMessageBox.Show("error add project", "error", MessageBoxButtons.OK, RadMessageIcon.Error, MessageBoxDefaultButton.Button1);
+                }
+                
+                radWaitingBar2.StopWaiting();
+                radWaitingBar2.Hide();
             }
+            else
+            {
+                //model invalid set error
+                foreach (var item in ModelState.Results)
+                {
+                    errorProvider1.SetError(Controls["txt_" + item.MemberNames.ToList()[0]], item.ErrorMessage);
+                }
+            }
+        }
+
+        public User getWorker()
+        {
+            User worker = new User();
+            worker.UserName = txt_UserName.Text;
+
             //convert password to sha256
-            worker.Password = UserLogic.passwordToSHA(txt_password.Text);
-            worker.NumHoursWork = num_numHours.Value;
-            worker.Email = txt_email.Text;
+            worker.Password = UserLogic.passwordToSHA(txt_Password.Text);
+            worker.NumHoursWork = txt_NumHoursWork.Value;
+            worker.Email = txt_Email.Text;
             worker.DepartmentId = (cmbx_department.SelectedItem as DepartmentUser).Id;
 
             if (cmbx_teamLeader.Items.Count != 0)
                 worker.ManagerId = (cmbx_teamLeader.SelectedItem as User).UserId;
             else
                 worker.ManagerId = 0;
-
-            try
-            {
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create(@"http://localhost:61309/api/addUser");
-                httpWebRequest.ContentType = "application/json";
-                httpWebRequest.Method = "POST";
-                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-                {
-
-                    string NewUserString = Newtonsoft.Json.JsonConvert.SerializeObject(worker, Formatting.None);
-                    streamWriter.Write(NewUserString);
-                    streamWriter.Flush();
-                    streamWriter.Close();
-                }
-                //Gettting response
-                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-
-                //Reading response
-                using (var streamReader = new System.IO.StreamReader(httpResponse.GetResponseStream(), ASCIIEncoding.ASCII))
-                {
-
-                    string result = UserLogic.addUser(worker);
-
-                    //If Add succeeded
-                    if (result == null)
-                    {
-                        MessageBox.Show("the worker added");
-
-                    }
-                    else MessageBox.Show("ERROR!!!");
-
-
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("error add new worker");
-            }
+            return worker;
         }
 
         private void AddWorker_Load(object sender, EventArgs e)

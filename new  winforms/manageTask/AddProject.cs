@@ -36,7 +36,7 @@ namespace manageTask
                 radWaitingBar2.StartWaiting();
 
                 //add project to db
-                if (TaskRequests.adddProject(project))
+                if (TaskRequests.addProject(project))
                 {
                     RadMessageBox.SetThemeName("materialTeal");
                     RadMessageBox.Show("succsess", "project added", MessageBoxButtons.OK, RadMessageIcon.None, MessageBoxDefaultButton.Button1);

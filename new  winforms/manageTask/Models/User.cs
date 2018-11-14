@@ -16,21 +16,22 @@ namespace manageTask.Models
             }
 
             public int UserId { get; set; }
+
             [Required(ErrorMessage = "name is required")]
+            [RegularExpression("@ ^[a - zA - Z]",ErrorMessage ="name must  contain only letters")]
             [MinLength(2, ErrorMessage = "name must be more than 2 chars"), MaxLength(15, ErrorMessage = "name must be less than 15 chars")]
             public string UserName { get; set; }
 
             [Required(ErrorMessage = "password is required")]
-            [UniquePassword]
-            // [MinLength(64), MaxLength(64)]
             public string Password { get; set; }
 
             [Required(ErrorMessage = "email is required")]
-            [UniqueEmail]
-            [EmailAddress]
+            [EmailAddress(ErrorMessage ="email adress invalid")]
             public string Email { get; set; }
-            //[MinLength(20),MaxLength(50)]
+           
             public string UserComputer { get; set; } = "";
+            
+            [Range(2,12,ErrorMessage ="num hour between 2-12")]
             public decimal NumHoursWork { get; set; } = 9;
 
             public int? ManagerId { get; set; }
