@@ -119,19 +119,13 @@ namespace manageTask
                 cmbx_teamLeader.Visible = true;
                 lbl_team_leader.Visible = true;
 
-
-                List<User> teamLeaders = UserLogic.getUserByDepartment("manager");
+                //get all Managers
+                List<User> managers = UserLogic.getUserByDepartment(GlobalProp.ManagerNameDepartment);
                 cmbx_teamLeader.DisplayMember = "UserName";
-
-                foreach (User user in teamLeaders)
-                {
-
-                    cmbx_teamLeader.Items.Add(user);
-                }
+                cmbx_teamLeader.Items.AddRange(managers.ToArray());
 
             }
-
-
+            //choose add manager
             else if ((cmbx_department.SelectedItem as DepartmentUser).Department.ToUpper() == department.MANAGER.ToString())
             {
                 cmbx_teamLeader.Visible = false;
