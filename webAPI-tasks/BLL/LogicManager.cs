@@ -176,9 +176,9 @@ namespace BLL
             return DBAccess.RunReader(query, func);
         }
 
-        public static List<SumHoursDoneUser> getWorkerHourDoProjects(int teamleaderId,int idWorker)
+        public static List<SumHoursDoneUser> getWorkerHourDoProjects(int teamleaderId,int idProject)
         {
-            string query = $"select sum(pd.sumHours),u.userName  from user u join projectworker pw on pw.id = u.id join presentday pd on pd.id = u.id where u.managerId ={teamleaderId} and pw.projectId = {idWorker} and pd.projectId = 1 group by pw.projectId ,pw.id ";
+            string query = $"select sum(pd.sumHours),u.userName  from user u join projectworker pw on pw.id = u.id left join presentday pd on pd.id = u.id where u.managerId = {teamleaderId} and pw.projectId = {idProject} and pd.projectId = {idProject} group by pw.projectId ,pw.id ";
 
             Func<MySqlDataReader, List<SumHoursDoneUser>> func = (reader) =>
             {
