@@ -19,6 +19,9 @@ namespace manageTask
    public static class GlobalProp
     {
         public static User CurrentUser { get; set; }
+
+        public const string ManagerNameDepartment= "manager";
+
         public const string TeamLeaderNameDepartment = "teamLeader";
     }
 }

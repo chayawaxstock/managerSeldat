@@ -81,16 +81,15 @@ namespace manageTask
 
         private void AddWorker_Load(object sender, EventArgs e)
         {
-            //get all the department
+            //get all departments
 
             List<DepartmentUser> departments = UserLogic.getAllDepartments();
             if (departments != null)
             {
                 cmbx_department.DisplayMember = "Department";
-                foreach (DepartmentUser department in departments)
-                {
-                    cmbx_department.Items.Add(department);
-                }
+
+                cmbx_department.Items.AddRange((departments.ToArray()));
+               
             }
 
         }
@@ -98,27 +97,23 @@ namespace manageTask
         private void cmbx_department_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbx_teamLeader.Items.Clear();
+
+            //choose to add develpment,QA,QX,UI
             if ((cmbx_department.SelectedItem as DepartmentUser).Department.ToUpper() == department.DEVELOPMENT.ToString() || (cmbx_department.SelectedItem as DepartmentUser).Department.ToUpper() == department.UI.ToString() || (cmbx_department.SelectedItem as DepartmentUser).Department.ToUpper() == department.UX.ToString() || (cmbx_department.SelectedItem as DepartmentUser).Department.ToUpper() == department.QA.ToString())
             {
                 cmbx_teamLeader.Visible = true;
                 lbl_team_leader.Visible = true;
 
                 //get all the teamleaders
-
-                List<User> teamLeaders = UserLogic.getUserByDepartment("teamLeader");
+                List<User> teamLeaders = UserLogic.getUserByDepartment(GlobalProp.TeamLeaderNameDepartment);
                 if (teamLeaders != null)
                 {
                     cmbx_teamLeader.DisplayMember = "UserName";
-
-                    foreach (User user in teamLeaders)
-                    {
-
-                        cmbx_teamLeader.Items.Add(user);
-                    }
+                    cmbx_teamLeader.Items.AddRange(teamLeaders.ToArray());
                 }
 
             }
-
+            //choose to add teamLeader
             else if ((cmbx_department.SelectedItem as DepartmentUser).Department.ToUpper() == department.TEAMLEADER.ToString())
             {
                 cmbx_teamLeader.Visible = true;
