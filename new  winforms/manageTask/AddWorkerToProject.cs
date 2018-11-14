@@ -17,6 +17,7 @@ namespace manageTask
         public AddWorkerToProject()
         {
             InitializeComponent();
+          
         }
 
         private void AddWorkerToProject_Load(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace manageTask
             List<Project> projects = TaskRequests.getAllProjects();
             if (projects != null)
             {
-                cmbx_projects.DisplayMember = "ProjectName";
+                radDropDownList1.DisplayMember = "ProjectName";
                 foreach (Project project in projects)
                 {
                     cmbx_projects.Items.Add(project);
