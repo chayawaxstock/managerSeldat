@@ -18,7 +18,7 @@ namespace manageTask
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReportProject());
+            Application.Run(new RadForm1());
         }
     }
 }
