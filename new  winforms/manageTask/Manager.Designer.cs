@@ -40,10 +40,8 @@ namespace manageTask
             this.addWorkerToATeamLeaderToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.reportsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.menuStrip1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,21 +109,11 @@ namespace manageTask
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
-            // radButton1
-            // 
-            this.radButton1.Location = new System.Drawing.Point(172, 166);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(110, 24);
-            this.radButton1.TabIndex = 7;
-            this.radButton1.Text = "radButton1";
-            this.radButton1.ThemeName = "btn";
-            // 
             // b
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 684);
-            this.Controls.Add(this.radButton1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.Name = "b";
@@ -136,7 +124,6 @@ namespace manageTask
             this.Text = "Manager";
             this.Load += new System.EventHandler(this.Manager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.menuStrip1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,7 +143,6 @@ namespace manageTask
         private Telerik.WinControls.UI.RadMenuItem addWorkerToATeamLeaderToolStripMenuItem;
         private Telerik.WinControls.UI.RadMenuItem reportsToolStripMenuItem;
         private Telerik.WinControls.RadThemeManager radThemeManager1;
-        private Telerik.WinControls.UI.RadButton radButton1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
