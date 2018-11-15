@@ -39,7 +39,7 @@ namespace manageTask
             this.panel1 = new Telerik.WinControls.UI.RadPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
-            this.radStatusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,13 +76,14 @@ namespace manageTask
             // 
             // ribbonTab1
             // 
-            this.ribbonTab1.IsSelected = true;
+            this.ribbonTab1.IsSelected = false;
             this.ribbonTab1.Name = "ribbonTab1";
             this.ribbonTab1.Text = "hhh";
             this.ribbonTab1.UseMnemonic = false;
             // 
             // ribbonTab2
             // 
+            this.ribbonTab2.IsSelected = true;
             this.ribbonTab2.Name = "ribbonTab2";
             this.ribbonTab2.Text = "ftyu\\";
             this.ribbonTab2.UseMnemonic = false;
@@ -128,10 +129,6 @@ namespace manageTask
             this.panel1.Size = new System.Drawing.Size(474, 237);
             this.panel1.TabIndex = 2;
             // 
-            // angleTrackForm1
-            // 
-
-            // 
             // RadRibbonForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,7 +145,7 @@ namespace manageTask
             this.Text = "RadRibbonForm1";
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).EndInit();
-            this.radStatusStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

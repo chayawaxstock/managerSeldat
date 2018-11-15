@@ -1004,3 +1004,4 @@ C:\Users\seldat\Documents\GitHub\managerSeldat\winforms\manageTask\obj\Debug\man
 C:\Users\seldat\Documents\GitHub\managerSeldat\winforms\manageTask\obj\Debug\manageTask.csproj.CopyComplete
 C:\Users\seldat\Documents\GitHub\managerSeldat\winforms\manageTask\obj\Debug\manageTask.exe
 C:\Users\seldat\Documents\GitHub\managerSeldat\winforms\manageTask\obj\Debug\manageTask.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\winforms\manageTask\obj\Debug\manageTask.RadForm2.resources
