@@ -77,6 +77,10 @@ import { TasksOfWorkerComponent } from './tasks-of-worker/tasks-of-worker.compon
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ProjectDetailsTemplateComponent } from './project-details-template/project-details-template.component';
 import { ProjectWorkerDetailsTemplateComponent } from './project-worker-details-template/project-worker-details-template.component';
+import { MenuSideComponent } from './menu-side/menu-side.component';
+import { MenuSideManagerComponent } from './menu-side-manager/menu-side-manager.component';
+import { MenuSideTeamLeaderComponent } from './menu-side-team-leader/menu-side-team-leader.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 
@@ -116,6 +120,10 @@ import { ProjectWorkerDetailsTemplateComponent } from './project-worker-details-
     ProjectDetailsTemplateComponent,
     ProjectWorkerDetailsTemplateComponent,
     GraphStatusHoursProjectsComponent,
+    MenuSideComponent,
+    MenuSideManagerComponent,
+    MenuSideTeamLeaderComponent,
+    UserProfileComponent,
   
   ],
   imports: [
