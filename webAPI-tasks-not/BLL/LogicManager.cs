@@ -7,6 +7,7 @@ using BOL.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Mail;
 using System.Reflection;
 
@@ -68,7 +69,7 @@ namespace BLL
             return DBAccess.RunReader(query, func);
         }
 
-
+       
 
         public static List<UserWithoutPassword> getUserByDepartment(string departmentName)
         {
@@ -87,7 +88,7 @@ namespace BLL
             return DBAccess.RunReader(query, func);
         }
 
-
+        
 
         public static List<SumHoursDoneUser> getSumHoursDoneForUsers(int teamleaderId)
         {
@@ -108,7 +109,7 @@ namespace BLL
 
         public static List<SumHoursUserDoneByMonth> getSumHoursUserDoneByMonth(int id)
         {
-            string query = $"SELECT p.name,sum(sumHours),month(timeBegin) FROM managertasks.presentday pr join project p on pr.projectId=p.projectId where id={id} and year(timeBegin)=YEAR(CURDATE())  group by month(timeBegin),pr.projectId,p.name order by month(timeBegin)";
+            string query = $"SELECT p.name,sum(sumHours),month(timeBegin) FROM managertasks.presentday pr join project p on pr.projectId=p.projectId where id={id} and year(timeBegin)=YEAR(CURDATE())  group by month(timeBegin),pr.projectId,p.name order by month(timeBegin)"; 
 
             Func<MySqlDataReader, List<SumHoursUserDoneByMonth>> func = (reader) =>
             {
@@ -175,9 +176,9 @@ namespace BLL
             return DBAccess.RunReader(query, func);
         }
 
-        public static List<SumHoursDoneUser> getWorkerHourDoProjects(int teamleaderId,int idWorker)
+        public static List<SumHoursDoneUser> getWorkerHourDoProjects(int teamleaderId,int idProject)
         {
-            string query = $"select sum(sumHours),p.name from presentday pd join  project p on p.projectId=pd.projectId where id={idWorker} and p.managerId={teamleaderId}  group by pd.projectId ";
+            string query = $"select sum(pd.sumHours),u.userName  from user u join projectworker pw on pw.id = u.id left join presentday pd on pd.id = u.id where u.managerId = {teamleaderId} and pw.projectId = {idProject} and pd.projectId = {idProject} group by pw.projectId ,pw.id ";
 
             Func<MySqlDataReader, List<SumHoursDoneUser>> func = (reader) =>
             {
@@ -192,15 +193,44 @@ namespace BLL
             return DBAccess.RunReader(query, func);
         }
 
-        public static Dictionary<UserWithoutPassword, List<SumHoursDoneUser>> GetWorkerTeamLeaderWithHourDo(int teamleaderId)
+        //public static List<ChartTeamLeader> GetWorkerTeamLeaderWithHourDo(int teamleaderId)
+        //{
+
+        //    List<UserWithoutPassword> worker = getUsersOfTeamLeader(teamleaderId);
+
+        //    string query = $"select u.id, u.userName,p.projectId,p.name,pw.hoursForProject,sum(pd.sumHours) from project p join projectworker pw on pw.projectId = p.projectId join user u on u.id = pw.id left join presentday pd on pd.id = pw.id  where u.managerId = {teamleaderId}  group by pw.projectId ,pw.id";
+        //    Func<MySqlDataReader, List<ChartTeamProject>> func = (reader) =>
+        //    {
+        //        List<ChartTeamProject> chartTeamProject = new List<ChartTeamProject>();
+        //        while (reader.Read())
+        //        {
+        //            chartTeamProject.Add(ConvertProjectWorker.convertChartTeamProject(reader));
+        //        }
+
+        //        return chartTeamProject;
+        //    };
+
+        //    var projectWorker = DBAccess.RunReader(query, func);
+        //    var projectWorkerChart=  projectWorker.GroupBy(p => p.IdWorker);
+        //    return new List<ChartTeamLeader>();
+
+        //}
+        //כמה שעות עשה כל עובד לפרויקט מסוים
+       public static List<SumHoursDoneUser> getUserProjectTeamHourDo(int idTeamLeader,int idProject)
         {
-            Dictionary<UserWithoutPassword, List<SumHoursDoneUser>> workerTeamLeaderWithHourDo = new Dictionary<UserWithoutPassword, List<SumHoursDoneUser>>();
-            List<UserWithoutPassword> worker = getUsersOfTeamLeader(teamleaderId);
-            foreach (var item in worker)
+            string query = $"select sum(pd.sumHours),u.userName from user u join projectworker pwon pw.id = u.id join presentday pd on pd.id = u.id where u.managerId = {idTeamLeader} and pw.projectId = {idProject} and pd.projectId = 1 group by pw.projectId ,pw.id";
+            List<SumHoursDoneUser> projectWorker = new List<SumHoursDoneUser>();
+            Func<MySqlDataReader, List<SumHoursDoneUser>> func = (reader) =>
             {
-                workerTeamLeaderWithHourDo.Add(item, getWorkerHourDoProjects(teamleaderId, item.UserId));
-            }
-            return workerTeamLeaderWithHourDo;
+                List<SumHoursDoneUser> projectWorkers = new List<SumHoursDoneUser>();
+                while (reader.Read())
+                {
+                    projectWorkers.Add(ConvertSumHoursUser.convertDBtoSumHoursUserProject(reader));
+                }
+                return projectWorkers;
+            };
+
+          return  projectWorker = DBAccess.RunReader(query, func);
         }
 
         public static List<ProjectWorker> getUsersBelongProjects(int projectId)
