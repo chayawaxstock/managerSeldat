@@ -51,16 +51,18 @@ errorList:string[];
    // this.user.userName  =this.formGroup.value["userName"];
    /// this.user.email=this.formGroup.value["email"];
    // this.user.numHoursWork=this.formGroup.value["numHoursWork"];
-    this.user=this.formGroup.value;
+    this.user.email=this.formGroup.value.email;
+    this.user.userName=this.formGroup.value.userName;
+    this.user.numHoursWork=this.formGroup.value.numHoursWork;
    this.user.userId=this.managerService.userToEdit.userId;
     this.managerService.updateUser(this.user).subscribe(res=>{
      this.router.navigate(["/manager/allUsers"]);
-    },err=>{
-      this.errorList=[];
-      if(err.error)
-      err.error.forEach(element => {
-        this.errorList.push(element+" ");
-      });
+    // },err=>{
+    //   this.errorList=[];
+    //   if(err.error)
+    //   err.error.forEach(element => {
+    //     this.errorList.push(element+" ");
+    //   });
     })
   }
 
