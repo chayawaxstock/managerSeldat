@@ -1,0 +1,62 @@
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\bin\Debug\BOL.dll
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\bin\Debug\BOL.pdb
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\bin\Debug\Google.Protobuf.xml
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\bin\Debug\MySql.Data.xml
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CopyComplete
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\obj\Debug\BOL.dll
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+S:\chaya wakshtok\manage task finally project\webAPI-tasks\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.dll
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.pdb
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\Google.Protobuf.xml
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\MySql.Data.xml
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CopyComplete
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.dll
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.dll
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.pdb
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\bin\Debug\Google.Protobuf.xml
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\bin\Debug\MySql.Data.xml
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.dll
+F:\!לחיה בהנאה\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Net.Http.Formatting.dll
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.dll
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.SelfHost.dll
+S:\חני ולדר\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.pdb
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.SelfHost.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\Google.Protobuf.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\MySql.Data.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.SelfHost.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.dll
+C:\Users\user1\Desktop\final-project-seldat\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\BOL.pdb
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Net.Http.Formatting.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.SelfHost.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\System.Web.Http.WebHost.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\Microsoft.Web.Infrastructure.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\Google.Protobuf.xml
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\MySql.Data.xml
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\bin\Debug\Microsoft.Web.Infrastructure.xml
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CopyComplete
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.dll
+S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.pdb
