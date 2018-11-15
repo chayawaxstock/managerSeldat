@@ -38,6 +38,7 @@ namespace manageTask
             BaseListViewVisualItem item = e.VisualItem;
             PhonebookEntry entry = item.Data.Value as PhonebookEntry;
             item.Image = entry.Image.GetThumbnailImage(80,80, null, IntPtr.Zero);
+           
             item.Text = "<html>" +
           "<span style=\"font-size:14pt;font-family:Segoe UI;\">" + entry.FirstName + " " + entry.LastName + "</span>" +
           "<br><br><span style=\"font-size:10.5pt;\"><b>Address:</b> <i>" + entry.Address + "</i>" +
