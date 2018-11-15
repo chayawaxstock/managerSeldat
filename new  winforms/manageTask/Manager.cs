@@ -35,6 +35,13 @@ namespace manageTask
         {
             //tabControl_SelectedIndexChanged(sender, e);
             //this.reportViewer1.RefreshReport();
+
+            UserProfil userControl = new UserProfil();
+            userControl.Visible = true;
+
+            this.Controls.Add(userControl);
+            //this.ResumeLayout();
+
         }
 
         //private void btn_add_project_Click(object sender, EventArgs e)

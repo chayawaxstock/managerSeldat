@@ -31,10 +31,10 @@ namespace manageTask
             this.btn_sign_in = new Telerik.WinControls.UI.RadButton();
             this.btn_computer = new Telerik.WinControls.UI.RadButton();
             this.menuStrip1 = new Telerik.WinControls.UI.RadMenu();
+            this.lbl_name = new Telerik.WinControls.UI.RadLabel();
             this.loginToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.logOutToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.aboutToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
-            this.lbl_name = new Telerik.WinControls.UI.RadLabel();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sign_in)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_computer)).BeginInit();
@@ -52,6 +52,7 @@ namespace manageTask
             this.btn_sign_in.TabIndex = 1;
             this.btn_sign_in.Text = "sign in ";
             this.btn_sign_in.ThemeName = "Fluent";
+            this.btn_sign_in.Click += new System.EventHandler(this.btn_sign_in_Click_1);
             // 
             // btn_computer
             // 
@@ -61,6 +62,7 @@ namespace manageTask
             this.btn_computer.TabIndex = 2;
             this.btn_computer.Text = "with user computer";
             this.btn_computer.ThemeName = "Fluent";
+            this.btn_computer.Click += new System.EventHandler(this.btn_computer_Click_1);
             // 
             // menuStrip1
             // 
@@ -73,6 +75,14 @@ namespace manageTask
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1301, 20);
             this.menuStrip1.TabIndex = 4;
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.Location = new System.Drawing.Point(1094, 3);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(38, 18);
+            this.lbl_name.TabIndex = 5;
+            this.lbl_name.Text = "hhhhh";
             // 
             // loginToolStripMenuItem
             // 
@@ -88,14 +98,6 @@ namespace manageTask
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Text = "about";
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.Location = new System.Drawing.Point(1094, 3);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(38, 18);
-            this.lbl_name.TabIndex = 5;
-            this.lbl_name.Text = "hhhhh";
             // 
             // Main
             // 
