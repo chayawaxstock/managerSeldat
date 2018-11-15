@@ -29,6 +29,7 @@ namespace manageTask
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddWorker));
             this.lbl_name = new Telerik.WinControls.UI.RadLabel();
             this.lbl_password = new Telerik.WinControls.UI.RadLabel();
             this.lbl_email = new Telerik.WinControls.UI.RadLabel();
@@ -46,6 +47,7 @@ namespace manageTask
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.radWaitingBar2 = new Telerik.WinControls.UI.RadWaitingBar();
             this.dotsRingWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.DotsRingWaitingBarIndicatorElement();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_name)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_password)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_email)).BeginInit();
@@ -59,12 +61,13 @@ namespace manageTask
             ((System.ComponentModel.ISupportInitialize)(this.txt_NumHoursWork)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radWaitingBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_name
             // 
-            this.lbl_name.Location = new System.Drawing.Point(122, 76);
+            this.lbl_name.Location = new System.Drawing.Point(122, 99);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(45, 21);
             this.lbl_name.TabIndex = 0;
@@ -73,7 +76,7 @@ namespace manageTask
             // 
             // lbl_password
             // 
-            this.lbl_password.Location = new System.Drawing.Point(121, 123);
+            this.lbl_password.Location = new System.Drawing.Point(121, 146);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(71, 21);
             this.lbl_password.TabIndex = 1;
@@ -82,7 +85,7 @@ namespace manageTask
             // 
             // lbl_email
             // 
-            this.lbl_email.Location = new System.Drawing.Point(129, 172);
+            this.lbl_email.Location = new System.Drawing.Point(129, 195);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(43, 21);
             this.lbl_email.TabIndex = 2;
@@ -91,7 +94,7 @@ namespace manageTask
             // 
             // lbl_numHourWork
             // 
-            this.lbl_numHourWork.Location = new System.Drawing.Point(120, 224);
+            this.lbl_numHourWork.Location = new System.Drawing.Point(120, 247);
             this.lbl_numHourWork.Name = "lbl_numHourWork";
             this.lbl_numHourWork.Size = new System.Drawing.Size(78, 21);
             this.lbl_numHourWork.TabIndex = 3;
@@ -100,7 +103,7 @@ namespace manageTask
             // 
             // lbl_department
             // 
-            this.lbl_department.Location = new System.Drawing.Point(119, 273);
+            this.lbl_department.Location = new System.Drawing.Point(119, 296);
             this.lbl_department.Name = "lbl_department";
             this.lbl_department.Size = new System.Drawing.Size(83, 21);
             this.lbl_department.TabIndex = 4;
@@ -109,7 +112,7 @@ namespace manageTask
             // 
             // txt_UserName
             // 
-            this.txt_UserName.Location = new System.Drawing.Point(206, 62);
+            this.txt_UserName.Location = new System.Drawing.Point(206, 85);
             this.txt_UserName.Name = "txt_UserName";
             this.txt_UserName.Size = new System.Drawing.Size(100, 36);
             this.txt_UserName.TabIndex = 5;
@@ -117,7 +120,7 @@ namespace manageTask
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(206, 158);
+            this.txt_Email.Location = new System.Drawing.Point(206, 181);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(100, 36);
             this.txt_Email.TabIndex = 8;
@@ -125,7 +128,7 @@ namespace manageTask
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(206, 110);
+            this.txt_Password.Location = new System.Drawing.Point(206, 133);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(100, 36);
             this.txt_Password.TabIndex = 9;
@@ -133,7 +136,7 @@ namespace manageTask
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(276, 376);
+            this.btn_add.Location = new System.Drawing.Point(276, 399);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(85, 46);
             this.btn_add.TabIndex = 12;
@@ -142,7 +145,7 @@ namespace manageTask
             // 
             // lbl_team_leader
             // 
-            this.lbl_team_leader.Location = new System.Drawing.Point(117, 324);
+            this.lbl_team_leader.Location = new System.Drawing.Point(117, 347);
             this.lbl_team_leader.Name = "lbl_team_leader";
             this.lbl_team_leader.Size = new System.Drawing.Size(84, 21);
             this.lbl_team_leader.TabIndex = 14;
@@ -153,7 +156,7 @@ namespace manageTask
             // cmbx_department
             // 
             this.cmbx_department.FormattingEnabled = true;
-            this.cmbx_department.Location = new System.Drawing.Point(208, 275);
+            this.cmbx_department.Location = new System.Drawing.Point(208, 298);
             this.cmbx_department.Name = "cmbx_department";
             this.cmbx_department.Size = new System.Drawing.Size(100, 21);
             this.cmbx_department.TabIndex = 16;
@@ -161,14 +164,14 @@ namespace manageTask
             // cmbx_teamLeader
             // 
             this.cmbx_teamLeader.FormattingEnabled = true;
-            this.cmbx_teamLeader.Location = new System.Drawing.Point(209, 322);
+            this.cmbx_teamLeader.Location = new System.Drawing.Point(209, 345);
             this.cmbx_teamLeader.Name = "cmbx_teamLeader";
             this.cmbx_teamLeader.Size = new System.Drawing.Size(100, 21);
             this.cmbx_teamLeader.TabIndex = 17;
             // 
             // txt_NumHoursWork
             // 
-            this.txt_NumHoursWork.Location = new System.Drawing.Point(208, 211);
+            this.txt_NumHoursWork.Location = new System.Drawing.Point(208, 234);
             this.txt_NumHoursWork.Name = "txt_NumHoursWork";
             this.txt_NumHoursWork.Size = new System.Drawing.Size(100, 36);
             this.txt_NumHoursWork.TabIndex = 19;
@@ -180,7 +183,7 @@ namespace manageTask
             // 
             // radWaitingBar2
             // 
-            this.radWaitingBar2.Location = new System.Drawing.Point(294, 375);
+            this.radWaitingBar2.Location = new System.Drawing.Point(294, 398);
             this.radWaitingBar2.Name = "radWaitingBar2";
             this.radWaitingBar2.Size = new System.Drawing.Size(50, 47);
             this.radWaitingBar2.TabIndex = 21;
@@ -194,11 +197,21 @@ namespace manageTask
             this.dotsRingWaitingBarIndicatorElement1.ElementColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.dotsRingWaitingBarIndicatorElement1.Name = "dotsRingWaitingBarIndicatorElement1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(182, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 59);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // AddWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 498);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radWaitingBar2);
             this.Controls.Add(this.txt_NumHoursWork);
             this.Controls.Add(this.cmbx_teamLeader);
@@ -234,6 +247,7 @@ namespace manageTask
             ((System.ComponentModel.ISupportInitialize)(this.txt_NumHoursWork)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radWaitingBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,5 +273,6 @@ namespace manageTask
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private Telerik.WinControls.UI.RadWaitingBar radWaitingBar2;
         private Telerik.WinControls.UI.DotsRingWaitingBarIndicatorElement dotsRingWaitingBarIndicatorElement1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -68,11 +68,12 @@
             // 
             // btn_logout
             // 
-            this.btn_logout.Location = new System.Drawing.Point(73, 116);
+            this.btn_logout.Location = new System.Drawing.Point(62, 112);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(69, 23);
+            this.btn_logout.Size = new System.Drawing.Size(89, 36);
             this.btn_logout.TabIndex = 5;
-            this.btn_logout.Text = "radButton1";
+            this.btn_logout.Text = "Log-out";
+            this.btn_logout.ThemeName = "MaterialTeal";
             // 
             // UserProfile
             // 

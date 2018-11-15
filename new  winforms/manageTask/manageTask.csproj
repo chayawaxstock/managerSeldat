@@ -280,6 +280,12 @@
     <Compile Include="TeamLeader.Designer.cs">
       <DependentUpon>TeamLeader.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validations\UniqueEmailAttribute.cs" />
     <Compile Include="Validations\UniquePasswordAttribute.cs" />
     <Compile Include="Validations\ValidDateTimeBeginAttribute.cs" />
@@ -363,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeamLeader.resx">
       <DependentUpon>TeamLeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
