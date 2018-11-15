@@ -38,7 +38,32 @@ namespace manageTask
 
         }
 
-        private void btn_sign_in_Click(object sender, EventArgs e)
+
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+
+            foreach (Form f in openForms)
+            {
+                if (f.Name != "Main")
+                    f.Close();
+            }
+
+
+
+            GlobalProp.CurrentUser = null;
+
+
+
+
+        }
+
+        private void btn_sign_in_Click_1(object sender, EventArgs e)
         {
             if (login.MdiParent != this)
                 login.MdiParent = this;
@@ -46,7 +71,7 @@ namespace manageTask
             login.WindowState = FormWindowState.Maximized;
         }
 
-        private void btn_computer_Click(object sender, EventArgs e)
+        private void btn_computer_Click_1(object sender, EventArgs e)
         {
             string computerName = System.Environment.MachineName;
             try
@@ -118,29 +143,6 @@ namespace manageTask
             {
                 MessageBox.Show("User is not login, choose another username.");
             }
-
-        }
-
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            List<Form> openForms = new List<Form>();
-
-            foreach (Form f in Application.OpenForms)
-                openForms.Add(f);
-
-            foreach (Form f in openForms)
-            {
-                if (f.Name != "Main")
-                    f.Close();
-            }
-
-
-
-            GlobalProp.CurrentUser = null;
-
-
-
 
         }
     }

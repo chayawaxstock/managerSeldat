@@ -30,7 +30,9 @@ namespace manageTask
             InitializeComponent();
         }
 
-        private void btn_signIn_Click(object sender, EventArgs e)
+
+
+        private void btn_signIn_Click_1(object sender, EventArgs e)
         {
             dynamic NewUser;
             //Try converting age.
@@ -45,9 +47,9 @@ namespace manageTask
                 }
 
                 string password = txt_password.Text;
-                if (password.Length < 4 || password.Length > 4)
+                if (password.Length < 8 || password.Length > 8)
                 {
-                    MessageBox.Show("password must contains 6 chars.");
+                    MessageBox.Show("password must contains 8 chars.");
                     return;
                 }
 

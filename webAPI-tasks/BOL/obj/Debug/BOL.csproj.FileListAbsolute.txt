@@ -96,6 +96,60 @@ C:\Users\User\Documents\פרויקט מסכים\final-project-seldat\manageTasks
 C:\Users\User\Documents\פרויקט מסכים\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
 C:\Users\User\Documents\פרויקט מסכים\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\User\Documents\פרויקט מסכים\final-project-seldat\manageTasks\webAPI-tasks\BOL\bin\Debug\Thinktecture.IdentityModel.Core.pdb
+<<<<<<< HEAD
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\BOL.dll.config
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\BOL.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\BOL.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Cors.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.Jwt.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Owin.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.Web.Cors.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.Web.Http.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.Web.Http.SelfHost.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Thinktecture.IdentityModel.Core.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Google.Protobuf.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Cors.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.Jwt.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\MySql.Data.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Thinktecture.IdentityModel.Core.pdb
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CopyComplete
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.dll
+C:\Users\seldat\Documents\GitHub\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+=======
 C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\bin\Debug\BOL.dll.config
 C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\bin\Debug\BOL.dll
 C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\bin\Debug\BOL.pdb
@@ -147,3 +201,4 @@ C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\o
 C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.dll
 C:\Users\User\Documents\פרויקט מסכים\managerSeldat\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+>>>>>>> 328dea2f07bce225fe02eb440518cb1cf356ab71

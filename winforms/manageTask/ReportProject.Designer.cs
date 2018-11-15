@@ -53,6 +53,7 @@
             this.breezeTheme1 = new Telerik.WinControls.Themes.BreezeTheme();
             this.radComboBoxSummaries = new Telerik.WinControls.UI.RadDropDownList();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
+            this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButtonPrint)).BeginInit();
@@ -73,7 +74,7 @@
             this.radGridView1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.radGridView1.ForeColor = System.Drawing.Color.Black;
             this.radGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radGridView1.Location = new System.Drawing.Point(31, 49);
+            this.radGridView1.Location = new System.Drawing.Point(22, 71);
             // 
             // 
             // 
@@ -87,7 +88,7 @@
             this.radGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radGridView1.Size = new System.Drawing.Size(403, 336);
             this.radGridView1.TabIndex = 0;
-            this.radGridView1.ThemeName = "TelerikMetroTouch";
+            this.radGridView1.ThemeName = "MaterialTeal";
             // 
             // radPrintDocument1
             // 
@@ -97,32 +98,32 @@
             // 
             // radButtonPrint
             // 
-            this.radButtonPrint.Location = new System.Drawing.Point(31, 7);
+            this.radButtonPrint.Location = new System.Drawing.Point(25, 17);
             this.radButtonPrint.Name = "radButtonPrint";
-            this.radButtonPrint.Size = new System.Drawing.Size(110, 35);
+            this.radButtonPrint.Size = new System.Drawing.Size(110, 36);
             this.radButtonPrint.TabIndex = 1;
             this.radButtonPrint.Text = "print";
-            this.radButtonPrint.ThemeName = "TelerikMetroTouch";
+            this.radButtonPrint.ThemeName = "MaterialTeal";
             this.radButtonPrint.Click += new System.EventHandler(this.radButtonPrint_Click);
             // 
             // radButtonPrintPreview
             // 
-            this.radButtonPrintPreview.Location = new System.Drawing.Point(148, 7);
+            this.radButtonPrintPreview.Location = new System.Drawing.Point(142, 17);
             this.radButtonPrintPreview.Name = "radButtonPrintPreview";
-            this.radButtonPrintPreview.Size = new System.Drawing.Size(110, 35);
+            this.radButtonPrintPreview.Size = new System.Drawing.Size(110, 36);
             this.radButtonPrintPreview.TabIndex = 2;
             this.radButtonPrintPreview.Text = "PrintPreview";
-            this.radButtonPrintPreview.ThemeName = "TelerikMetroTouch";
+            this.radButtonPrintPreview.ThemeName = "MaterialTeal";
             this.radButtonPrintPreview.Click += new System.EventHandler(this.radButtonPrintPreview_Click);
             // 
             // printSeting
             // 
-            this.printSeting.Location = new System.Drawing.Point(264, 7);
+            this.printSeting.Location = new System.Drawing.Point(258, 17);
             this.printSeting.Name = "printSeting";
             this.printSeting.Size = new System.Drawing.Size(120, 36);
             this.printSeting.TabIndex = 3;
             this.printSeting.Text = "printSeting";
-            this.printSeting.ThemeName = "TelerikMetroTouch";
+            this.printSeting.ThemeName = "MaterialTeal";
             this.printSeting.Click += new System.EventHandler(this.radButtonPrintSettings_Click);
             // 
             // radListBox1
@@ -138,40 +139,40 @@
             listViewDataItem3,
             listViewDataItem4});
             this.radListBox1.ItemSize = new System.Drawing.Size(200, 36);
-            this.radListBox1.Location = new System.Drawing.Point(440, 49);
+            this.radListBox1.Location = new System.Drawing.Point(434, 59);
             this.radListBox1.Name = "radListBox1";
             this.radListBox1.Size = new System.Drawing.Size(120, 118);
             this.radListBox1.TabIndex = 4;
-            this.radListBox1.ThemeName = "Breeze";
+            this.radListBox1.ThemeName = "MaterialTeal";
             this.radListBox1.SelectedIndexChanged += new System.EventHandler(this.radListBox1_SelectedIndexChanged);
             // 
             // radButtonExport
             // 
-            this.radButtonExport.Location = new System.Drawing.Point(445, 244);
+            this.radButtonExport.Location = new System.Drawing.Point(443, 271);
             this.radButtonExport.Name = "radButtonExport";
-            this.radButtonExport.Size = new System.Drawing.Size(110, 32);
+            this.radButtonExport.Size = new System.Drawing.Size(110, 36);
             this.radButtonExport.TabIndex = 7;
             this.radButtonExport.Text = "Export";
-            this.radButtonExport.ThemeName = "TelerikMetroTouch";
+            this.radButtonExport.ThemeName = "MaterialTeal";
             this.radButtonExport.Click += new System.EventHandler(this.radButtonExport_Click);
             // 
             // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(440, 25);
+            this.radLabel1.Location = new System.Drawing.Point(434, 35);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(100, 23);
+            this.radLabel1.Size = new System.Drawing.Size(97, 21);
             this.radLabel1.TabIndex = 8;
             this.radLabel1.Text = "Export setting";
-            this.radLabel1.ThemeName = "TelerikMetroTouch";
+            this.radLabel1.ThemeName = "MaterialTeal";
             // 
             // radLabel2
             // 
-            this.radLabel2.Location = new System.Drawing.Point(441, 174);
+            this.radLabel2.Location = new System.Drawing.Point(440, 192);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(75, 23);
+            this.radLabel2.Size = new System.Drawing.Size(74, 21);
             this.radLabel2.TabIndex = 9;
             this.radLabel2.Text = "Properties";
-            this.radLabel2.ThemeName = "TelerikMetroTouch";
+            this.radLabel2.ThemeName = "MaterialTeal";
             // 
             // radComboBoxSummaries
             // 
@@ -183,17 +184,17 @@
             this.radComboBoxSummaries.Items.Add(radListDataItem2);
             this.radComboBoxSummaries.Items.Add(radListDataItem3);
             this.radComboBoxSummaries.Items.Add(radListDataItem4);
-            this.radComboBoxSummaries.Location = new System.Drawing.Point(438, 203);
+            this.radComboBoxSummaries.Location = new System.Drawing.Point(432, 213);
             this.radComboBoxSummaries.Name = "radComboBoxSummaries";
-            this.radComboBoxSummaries.Size = new System.Drawing.Size(125, 24);
+            this.radComboBoxSummaries.Size = new System.Drawing.Size(125, 36);
             this.radComboBoxSummaries.TabIndex = 10;
-            this.radComboBoxSummaries.ThemeName = "Fluent";
+            this.radComboBoxSummaries.ThemeName = "MaterialTeal";
             // 
             // ReportProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 419);
+            this.ClientSize = new System.Drawing.Size(568, 444);
             this.Controls.Add(this.radComboBoxSummaries);
             this.Controls.Add(this.radLabel2);
             this.Controls.Add(this.radLabel1);
@@ -208,8 +209,8 @@
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
-            this.Text = "ReportProject";
-            this.ThemeName = "TelerikMetroTouch";
+            this.Text = "h";
+            this.ThemeName = "MaterialTeal";
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButtonPrint)).EndInit();
@@ -243,5 +244,6 @@
         private Telerik.WinControls.Themes.BreezeTheme breezeTheme1;
         private Telerik.WinControls.UI.RadDropDownList radComboBoxSummaries;
         private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
+        private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
     }
 }

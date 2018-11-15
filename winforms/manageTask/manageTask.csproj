@@ -257,6 +257,12 @@
     <Compile Include="RadForm1.Designer.cs">
       <DependentUpon>RadForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="RadRibbonForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,9 +368,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RadForm1.resx">
       <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RadRibbonForm1.resx">
       <DependentUpon>RadRibbonForm1.cs</DependentUpon>
@@ -402,6 +412,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bigחיה.png" />
+    <None Include="Resources\photo_2018-10-29_00-31-38.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

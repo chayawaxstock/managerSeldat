@@ -136,7 +136,53 @@ namespace BLL
                 }
                 return true;
             }
-             return false;
+            else return false;
+
+        }
+        public static List<ReportWorker> CreateReports2(string viewName)
+        {
+            Func<MySqlDataReader, List<ReportWorker>> func = (reader) =>
+            {
+                List<ReportWorker> reportWorker = new List<ReportWorker>();
+                while (reader.Read())
+                {
+                    reportWorker.Add(ConvertReport.ConvertDBtoReportWorker(reader));
+                }
+                return reportWorker;
+            };
+
+            return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() { "viewName" }));
+        }
+
+        public static List<ReportProject> CreateReports1(string viewName)
+        {
+            Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
+            {
+                List<ReportProject> reportProject = new List<ReportProject>();
+                while (reader.Read())
+                {
+                    reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
+                }
+                return reportProject;
+            };
+
+            return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() { "viewName" }));
+        }
+
+        public static List<ReportProject> CreateReports(List<string> param)
+        {
+
+            Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
+            {
+                List<ReportProject> reportProject = new List<ReportProject>();
+                while (reader.Read())
+                {
+                    reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
+                }
+                return reportProject;
+            };
+
+            return (DBAccess.RunReader(func, "CreateReport", new List<string>() { param[0] }, new List<string>() { param[1] }));
 
         }
 

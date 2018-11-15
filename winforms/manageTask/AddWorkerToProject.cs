@@ -21,6 +21,7 @@ namespace manageTask
 
         private void AddWorkerToProject_Load(object sender, EventArgs e)
         {
+
             List<User> workers = UserRequests.getSimpleWorkers();
             if (workers != null)
             {
