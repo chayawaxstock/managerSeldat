@@ -60,3 +60,18 @@ S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manage
 S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.csproj.CopyComplete
 S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.dll
 S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BOL\obj\Debug\BOL.pdb
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\BOL.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\BOL.pdb
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\Google.Protobuf.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\MySql.Data.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\System.Net.Http.Formatting.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\System.Web.Http.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\System.Web.Http.SelfHost.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\System.Web.Http.WebHost.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\obj\Debug\BOL.csproj.CopyComplete
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\obj\Debug\BOL.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BOL\obj\Debug\BOL.pdb

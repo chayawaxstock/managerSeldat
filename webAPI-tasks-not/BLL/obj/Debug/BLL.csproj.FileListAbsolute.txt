@@ -76,3 +76,20 @@ S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manage
 S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BLL\obj\Debug\BLL.csproj.CopyComplete
 S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BLL\obj\Debug\BLL.dll
 S:\chaya wakshtok\manage task finally project\final-project-seldat-master\manageTasks\webAPI-tasks\BLL\obj\Debug\BLL.pdb
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\BLL.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\BLL.pdb
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\BOL.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\DAL.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\System.Web.Http.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\System.Net.Http.Formatting.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\BOL.pdb
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\DAL.pdb
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\Google.Protobuf.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\MySql.Data.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\System.Web.Http.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\bin\Debug\System.Net.Http.Formatting.xml
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\obj\Debug\BLL.dll
+D:\users\user1\Documents\GitHub\managerSeldat\webAPI-tasks-not\BLL\obj\Debug\BLL.pdb
