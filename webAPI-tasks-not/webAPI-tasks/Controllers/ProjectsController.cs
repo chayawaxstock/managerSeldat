@@ -123,19 +123,32 @@ namespace webAPI_tasks.Controllers
                     };
         }
 
-        [HttpPost]
-        [Route("api/createReport")]
-        public HttpResponseMessage CreateReports([FromBody]List<string> param)
-        {
-            return Request.CreateResponse(HttpStatusCode.OK, LogicProjects.CreateReports(param));
-        }
+        //[HttpPost]
+        //[Route("api/createReport")]
+        //public HttpResponseMessage CreateReports([FromBody]List<string> param)
+        //{
+        //    return Request.CreateResponse(HttpStatusCode.OK, LogicProjects.CreateReports(param));
+        //}
 
 
         [HttpGet]
-        [Route("api/createReport1/{viewName}")]
-        public HttpResponseMessage CreateReports1([FromUri]string viewName)
+        [Route("api/createReport/{idReport}")]
+        public HttpResponseMessage CreateReports([FromUri]int idReport)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, LogicProjects.CreateReports1(viewName));
+            string viewName = "";
+            switch (idReport)
+            {
+                case 1:
+                    viewName = "report";
+                    return Request.CreateResponse(HttpStatusCode.OK, LogicProjects.CreateReportsProject(viewName));
+                case 2:
+                    viewName = "reportWorker";
+                    return Request.CreateResponse(HttpStatusCode.OK,LogicProjects.CreateReportsWorker(viewName) );
+                default:
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, "error to get report");
+            }
+
+            
         }
     }
 }

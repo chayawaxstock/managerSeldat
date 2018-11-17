@@ -205,7 +205,7 @@ namespace BLL
         }
 
 
-        public static List<ReportWorker> CreateReports2(string viewName)
+        public static List<ReportWorker> CreateReportsWorker(string viewName)
         {
             Func<MySqlDataReader, List<ReportWorker>> func = (reader) =>
             {
@@ -221,8 +221,9 @@ namespace BLL
         }
 
 
-        public static List<ReportProject> CreateReports1(string viewName)
+        public static List<ReportProject> CreateReportsProject(string viewName)
         {
+     
             Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
             {
                 List<ReportProject> reportProject = new List<ReportProject>();
@@ -232,29 +233,25 @@ namespace BLL
                 }
                 return reportProject;
             };
-
+           
             return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() { "viewName" }));
         }
 
+        //public static List<ReportProject> CreateReports(int idReport)
+        //{
 
-        public static List<ReportProject> CreateReports(List<string> param)
-        {
+        //    Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
+        //    {
+        //        List<ReportProject> reportProject = new List<ReportProject>();
+        //        while (reader.Read())
+        //        {
+        //            reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
+        //        }
+        //        return reportProject;
+        //    };
 
-            Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
-            {
-                List<ReportProject> reportProject = new List<ReportProject>();
-                while (reader.Read())
-                {
-                    reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
-                }
-                return reportProject;
-            };
-
-            return (DBAccess.RunReader(func, "CreateReport", new List<string>() { param[0] }, new List<string>() { param[1] }));
-        }
-
-
-
+        //    return (DBAccess.RunReader(func, "CreateReport", new List<string>() { param[0] }, new List<string>() { param[1] }));
+        //}
 
     }
 }
