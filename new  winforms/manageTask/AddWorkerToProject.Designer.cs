@@ -35,16 +35,18 @@ namespace manageTask
             this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
             this.radDropDownList1 = new Telerik.WinControls.UI.RadDropDownList();
             this.cmbx_projects = new System.Windows.Forms.ComboBox();
+            this.radCheckedListBox1 = new Telerik.WinControls.UI.RadCheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_worker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_project)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addProjectToWorker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radCheckedListBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_worker
             // 
-            this.lbl_worker.Location = new System.Drawing.Point(152, 57);
+            this.lbl_worker.Location = new System.Drawing.Point(81, 39);
             this.lbl_worker.Name = "lbl_worker";
             this.lbl_worker.Size = new System.Drawing.Size(53, 21);
             this.lbl_worker.TabIndex = 1;
@@ -73,7 +75,7 @@ namespace manageTask
             // checkedListBoxWorkers
             // 
             this.checkedListBoxWorkers.FormattingEnabled = true;
-            this.checkedListBoxWorkers.Location = new System.Drawing.Point(81, 81);
+            this.checkedListBoxWorkers.Location = new System.Drawing.Point(67, 66);
             this.checkedListBoxWorkers.Name = "checkedListBoxWorkers";
             this.checkedListBoxWorkers.Size = new System.Drawing.Size(111, 194);
             this.checkedListBoxWorkers.TabIndex = 7;
@@ -95,11 +97,22 @@ namespace manageTask
             this.cmbx_projects.Size = new System.Drawing.Size(121, 21);
             this.cmbx_projects.TabIndex = 6;
             // 
+            // radCheckedListBox1
+            // 
+            this.radCheckedListBox1.GroupItemSize = new System.Drawing.Size(200, 36);
+            this.radCheckedListBox1.ItemSize = new System.Drawing.Size(200, 36);
+            this.radCheckedListBox1.Location = new System.Drawing.Point(199, 66);
+            this.radCheckedListBox1.Name = "radCheckedListBox1";
+            this.radCheckedListBox1.Size = new System.Drawing.Size(120, 194);
+            this.radCheckedListBox1.TabIndex = 9;
+            this.radCheckedListBox1.ThemeName = "MaterialTeal";
+            // 
             // AddWorkerToProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 477);
+            this.Controls.Add(this.radCheckedListBox1);
             this.Controls.Add(this.radDropDownList1);
             this.Controls.Add(this.checkedListBoxWorkers);
             this.Controls.Add(this.cmbx_projects);
@@ -118,6 +131,7 @@ namespace manageTask
             ((System.ComponentModel.ISupportInitialize)(this.lbl_project)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addProjectToWorker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radCheckedListBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -132,5 +146,6 @@ namespace manageTask
         private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
         private Telerik.WinControls.UI.RadDropDownList radDropDownList1;
         private System.Windows.Forms.ComboBox cmbx_projects;
+        private Telerik.WinControls.UI.RadCheckedListBox radCheckedListBox1;
     }
 }

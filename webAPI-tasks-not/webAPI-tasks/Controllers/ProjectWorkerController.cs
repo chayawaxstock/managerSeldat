@@ -69,5 +69,13 @@ namespace webAPI_tasks.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, x);
 
         }
+
+        [HttpGet]
+        [Route("api/getUsersTeamLeaderProject/{teamleaderId}/{idProject}")]
+        public HttpResponseMessage getUsersTeamLeaderProject(int teamleaderId,int idProject)
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, LogicManager.getWorkerHourDoProjects(teamleaderId, idProject));
+        }
+
     }
 }

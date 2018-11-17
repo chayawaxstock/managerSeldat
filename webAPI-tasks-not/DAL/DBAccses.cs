@@ -87,7 +87,7 @@ namespace _00_DAL
 
         }
 
-        public static int? RunStore(string nameStore,int managerId)
+        public static int? RunStore(string nameStore,List<string> conditionValue,List<string> condition)
         {
             try
             {
@@ -96,8 +96,12 @@ namespace _00_DAL
                     Connection.Open();
                     MySqlCommand command = new MySqlCommand(nameStore, Connection);
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("id", managerId);
-                    return command.ExecuteNonQuery();
+                    for (int i = 0; i < condition.Count; i++)
+                    {
+                       command.Parameters.AddWithValue(condition[i], conditionValue[i]);
+                    }
+                   
+                        return command.ExecuteNonQuery();
                 }
             }
             catch (Exception ex)
@@ -115,7 +119,7 @@ namespace _00_DAL
         }
 
 
-        public static List<T> RunReader<T>(Func<MySqlDataReader, List<T>> func, string nameStore, List<string> conditionValue, List<string> condition)
+        public static List<T> RunReader<T>( Func<MySqlDataReader, List<T>> func, string nameStore, List<string> conditionValue, List<string> condition)
         {
             try
             {
@@ -145,6 +149,10 @@ namespace _00_DAL
             }
 
         }
+
+
+
+
 
     }
 }

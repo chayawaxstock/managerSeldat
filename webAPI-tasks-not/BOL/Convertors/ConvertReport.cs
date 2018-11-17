@@ -28,7 +28,13 @@ namespace BOL.Convertors
         {
             return new ReportWorker()
             {
-               
+                //Project = convertProject.convertDBtoProjects(readerRow),
+                //manager = readerRow.GetString(8),
+                //NumWorkers = readerRow.GetInt32(9),
+                //sumHourWork = readerRow.IsDBNull(10) ? 0 : readerRow.GetDecimal(10),
+                //DaysStay = readerRow.IsDBNull(11) ? 0 : readerRow.GetInt32(11),
+                //presentDoing = readerRow.IsDBNull(12) ? 0 : readerRow.GetDecimal(12),
+                //NumHourDoDaysWorker = readerRow.IsDBNull(13) ? 0 : readerRow.GetDecimal(13)
             };
         }
 

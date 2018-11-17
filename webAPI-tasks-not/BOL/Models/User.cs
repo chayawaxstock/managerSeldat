@@ -29,6 +29,11 @@ namespace BOL
         [MinLength(64), MaxLength(64)]
         public string Password { get; set; }
 
+        [MinLength(64), MaxLength(64)]
+
+        [Required(ErrorMessage = "ConfirmPassword is required")]
+        public string ConfirmPassword { get; set; }
+
         [Required(ErrorMessage = "email is required")]
         //[UniqueEmail]
         [EmailAddress]

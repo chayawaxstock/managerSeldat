@@ -87,5 +87,18 @@ namespace BOL.Convertors
 
         }
 
+        public static ChartTeamProject convertChartTeamProject(MySqlDataReader readerRow)
+        {
+           
+            return new ChartTeamProject()
+            {
+               IdWorker=readerRow.GetInt32(0),
+               NameWorker=readerRow.GetString(1),
+               IdProject=readerRow.GetInt32(2),
+               NameProject=readerRow.GetString(3),
+               SumHourNeedDoing=readerRow.GetDecimal(4),
+               sumHourDoing=readerRow.GetDecimal(5)
+            };
+        }
     }
 }

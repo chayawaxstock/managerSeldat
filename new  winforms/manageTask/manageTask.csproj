@@ -280,11 +280,19 @@
     <Compile Include="TeamLeader.Designer.cs">
       <DependentUpon>TeamLeader.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="UserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+=======
     <Compile Include="UserProfil.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserProfil.Designer.cs">
       <DependentUpon>UserProfil.cs</DependentUpon>
+>>>>>>> c6ae177287ba12b357c04b050b57661a2ccf0723
     </Compile>
     <Compile Include="Validations\UniqueEmailAttribute.cs" />
     <Compile Include="Validations\UniquePasswordAttribute.cs" />
@@ -370,8 +378,13 @@
     <EmbeddedResource Include="TeamLeader.resx">
       <DependentUpon>TeamLeader.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+=======
     <EmbeddedResource Include="UserProfil.resx">
       <DependentUpon>UserProfil.cs</DependentUpon>
+>>>>>>> c6ae177287ba12b357c04b050b57661a2ccf0723
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

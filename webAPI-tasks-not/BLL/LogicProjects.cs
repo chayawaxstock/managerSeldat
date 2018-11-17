@@ -71,17 +71,7 @@ namespace BLL
                 List<Project> projects = new List<Project>();
                 while (reader.Read())
                 {
-                    projects.Add(new Project
-                    {
-                        ProjectId = reader.GetInt32(0),
-                        ProjectName = reader.GetString(1),
-                        CustomerName = reader.GetString(2),
-                        numHourForProject = reader.GetDecimal(3),
-                        DateBegin = reader.GetDateTime(4),
-                        DateEnd = reader.GetDateTime(5),
-                        IsFinish = reader.GetBoolean(6),
-                        IdManager = reader.GetInt32(7)
-                    });
+                    projects.Add(ConvertProject.convertDBtoProjects(reader));
                 }
                 return projects;
             };
@@ -134,19 +124,65 @@ namespace BLL
             int IsFinish= project.IsFinish ? 1 : 0;
 
             string query = $"INSERT INTO `managertasks`.`project`(`numHour`,`name`,`dateBegin`,`dateEnd`,`isFinish`,`customerName`,`managerId`) VALUES({project.numHourForProject},'{project.ProjectName}','{dateBegin}','{dateEnd}',{IsFinish},'{project.CustomerName}',{project.IdManager}); ";
-            
-            //if (DBAccess.RunNonQuery(query)==1&& DBAccess.RunStore("addProject", project.IdManager)!=null)
-            //{
 
-            foreach (var item in project.HoursForDepartment)
+            if (DBAccess.RunNonQuery(query) != null && DBAccess.RunStore("addProject", new List<string>() { project.IdManager.ToString() }, new List<string>() { "id" }) != null)
             {
-                query = $"SET @EE=0;SELECT MAX(projectId) FROM project INTO @EE; INSERT INTO `managertasks`.`hourfordepartment`(`projectId`,`departmentId`,`sumHours`)VALUES(@EE,{item.DepartmentId},{item.SumHours});";
+
+                foreach (var item in project.HoursForDepartment)
+                {
+                    query = $"SET @EE=0;SELECT MAX(projectId) FROM project INTO @EE; INSERT INTO `managertasks`.`hourfordepartment`(`projectId`,`departmentId`,`sumHours`)VALUES(@EE,{item.DepartmentId},{item.SumHours});";
                     DBAccess.RunNonQuery(query);
-                        
-            }
+
+                }
                 return true;
-            //}
-            //else return false;
+            }
+            else return false;
+
+        }
+        public static List<ReportWorker> CreateReports2(string viewName)
+        {
+            Func<MySqlDataReader, List<ReportWorker>> func = (reader) =>
+            {
+                List<ReportWorker> reportWorker = new List<ReportWorker>();
+                while (reader.Read())
+                {
+                    reportWorker.Add(ConvertReport.ConvertDBtoReportWorker(reader));
+                }
+                return reportWorker;
+            };
+
+            return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() { "viewName" }));
+        }
+
+        public static List<ReportProject> CreateReports1(string viewName)
+        {
+            Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
+            {
+                List<ReportProject> reportProject = new List<ReportProject>();
+                while (reader.Read())
+                {
+                    reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
+                }
+                return reportProject;
+            };
+
+            return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() { "viewName" }));
+        }
+
+        public static List<ReportProject> CreateReports(List<string> param)
+        {
+
+            Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
+            {
+                List<ReportProject> reportProject = new List<ReportProject>();
+                while (reader.Read())
+                {
+                    reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
+                }
+                return reportProject;
+            };
+
+            return (DBAccess.RunReader(func, "CreateReport", new List<string>() { param[0] }, new List<string>() { param[1] }));
 
         }
 
@@ -233,6 +269,7 @@ namespace BLL
                 }
                 return reportProject;
             };
+<<<<<<< HEAD
            
             return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() { "viewName" }));
         }
@@ -252,6 +289,32 @@ namespace BLL
 
         //    return (DBAccess.RunReader(func, "CreateReport", new List<string>() { param[0] }, new List<string>() { param[1] }));
         //}
+=======
+
+            return (DBAccess.RunReader(func, "report", new List<string>() { viewName }, new List<string>() {  "viewName" }));
+        }
+        
+
+        public static List<ReportProject> CreateReports(List<string> param)
+        {
+            
+            Func<MySqlDataReader, List<ReportProject>> func = (reader) =>
+            {
+                List<ReportProject> reportProject = new List<ReportProject>();
+                while (reader.Read())
+                {
+                    reportProject.Add(ConvertReport.ConvertDBtoReport(reader));
+                }
+                return reportProject;
+            };
+
+            return (DBAccess.RunReader( func,"CreateReport", new List<string>() { param[0] },new List<string>() { param[1] }));
+             
+        }
+
+
+
+>>>>>>> b630bfe7302dab1e3ceb62c035ae5f0dfd152899
 
     }
 }
